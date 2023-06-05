@@ -1,0 +1,160 @@
+object fEdit: TfEdit
+  Left = 890
+  Height = 202
+  Top = 322
+  Width = 532
+  BorderStyle = bsDialog
+  Caption = 'Редактор контакта'
+  ClientHeight = 202
+  ClientWidth = 532
+  Color = 16760767
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poMainFormCenter
+  LCLVersion = '2.2.6.0'
+  object Label1: TLabel
+    Left = 24
+    Height = 16
+    Top = 8
+    Width = 136
+    Caption = 'Укажите читателя:'
+    Color = clWhite
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clPurple
+    Font.Height = -13
+    Font.Name = 'Fixedsys'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    Font.Style = [fsUnderline]
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object eReader: TEdit
+    Left = 24
+    Height = 23
+    Top = 32
+    Width = 210
+    TabOrder = 0
+  end
+  object bSave: TBitBtn
+    Left = 88
+    Height = 26
+    Top = 160
+    Width = 182
+    AutoSize = True
+    Caption = 'Сохранить контакт'
+    Default = True
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clTeal
+    Font.Height = -13
+    Font.Name = 'Fixedsys'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    Kind = bkOK
+    ModalResult = 1
+    OnClick = bSaveClick
+    ParentFont = False
+    TabOrder = 1
+  end
+  object bCancel: TBitBtn
+    Left = 280
+    Height = 26
+    Top = 160
+    Width = 142
+    AutoSize = True
+    Cancel = True
+    Caption = 'Не сохранять'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clTeal
+    Font.Height = -13
+    Font.Name = 'Fixedsys'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    Kind = bkCancel
+    ModalResult = 2
+    ParentFont = False
+    TabOrder = 2
+  end
+  object Label4: TLabel
+    Left = 24
+    Height = 16
+    Top = 76
+    Width = 112
+    Caption = 'Укажите дату: '
+    Color = clWhite
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clPurple
+    Font.Height = -13
+    Font.Name = 'Fixedsys'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    Font.Style = [fsUnderline]
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object Label5: TLabel
+    Left = 304
+    Height = 16
+    Top = 8
+    Width = 184
+    Caption = 'Укажите название книги:'
+    Color = clWhite
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clPurple
+    Font.Height = -13
+    Font.Name = 'Fixedsys'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    Font.Style = [fsUnderline]
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object eBook: TEdit
+    Left = 304
+    Height = 23
+    Top = 32
+    Width = 208
+    TabOrder = 3
+  end
+  object DateHBEdit1: TDateEdit
+    Left = 24
+    Height = 23
+    Top = 104
+    Width = 103
+    CalendarDisplaySettings = [dsShowHeadings, dsShowDayNames]
+    DateOrder = doDMY
+    ButtonWidth = 23
+    NumGlyphs = 1
+    MaxLength = 10
+    TabOrder = 4
+    Text = '  .  .    '
+  end
+  object Label2: TLabel
+    Left = 304
+    Height = 16
+    Top = 76
+    Width = 112
+    Caption = 'Укажите автора'
+    Color = clWhite
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clPurple
+    Font.Height = -13
+    Font.Name = 'Fixedsys'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    Font.Style = [fsUnderline]
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object eWriter: TEdit
+    Left = 304
+    Height = 23
+    Top = 104
+    Width = 208
+    TabOrder = 5
+  end
+end

@@ -1,0 +1,104 @@
+object fMain: TfMain
+  Left = 931
+  Height = 400
+  Top = 93
+  Width = 928
+  BorderStyle = bsDialog
+  Caption = 'Телефонный справочник'
+  ClientHeight = 400
+  ClientWidth = 928
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '2.2.6.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 27
+    Top = 0
+    Width = 928
+    Align = alTop
+    ClientHeight = 27
+    ClientWidth = 928
+    Color = clTeal
+    ParentColor = False
+    TabOrder = 0
+    object bAdd: TSpeedButton
+      Left = 8
+      Height = 20
+      Top = 4
+      Width = 132
+      AutoSize = True
+      Caption = 'Добавить контакт'
+      Color = clSilver
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Color = clTeal
+      Font.Height = -13
+      Font.Name = 'Fixedsys'
+      Font.Pitch = fpFixed
+      Font.Quality = fqDraft
+      Font.Style = [fsUnderline]
+      OnClick = bAddClick
+      ParentFont = False
+    end
+    object bEdit: TSpeedButton
+      Left = 144
+      Height = 20
+      Top = 4
+      Width = 172
+      AutoSize = True
+      Caption = 'Редактировать контакт'
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Color = clTeal
+      Font.Name = 'Fixedsys'
+      Font.Pitch = fpFixed
+      Font.Quality = fqDraft
+      Font.Style = [fsUnderline]
+      OnClick = bEditClick
+      OnDblClick = bEditClick
+      ParentFont = False
+    end
+    object bDel: TSpeedButton
+      Left = 320
+      Height = 20
+      Top = 4
+      Width = 124
+      AutoSize = True
+      Caption = 'Удалить контакт'
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Color = clTeal
+      Font.Name = 'Fixedsys'
+      Font.Pitch = fpFixed
+      Font.Quality = fqDraft
+      Font.Style = [fsUnderline]
+      OnClick = bDelClick
+      ParentFont = False
+    end
+    object bSort: TSpeedButton
+      Left = 448
+      Height = 20
+      Top = 4
+      Width = 148
+      AutoSize = True
+      Caption = 'Сортировать список'
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Color = clTeal
+      Font.Name = 'Fixedsys'
+      Font.Pitch = fpFixed
+      Font.Quality = fqDraft
+      Font.Style = [fsUnderline]
+      OnClick = bSortClick
+      ParentFont = False
+    end
+  end
+  object SG: TStringGrid
+    Left = 0
+    Height = 373
+    Top = 27
+    Width = 928
+    Align = alClient
+    Color = 15660249
+    FixedCols = 0
+    RowCount = 1
+    TabOrder = 1
+  end
+end
